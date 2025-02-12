@@ -6,11 +6,14 @@ public class Main5 {
         String secondName = "Ignat";
         String thirdName = "Muslim";
 
-        StringJoiner stringJoiner = new StringJoiner(", ");
-        stringJoiner.add(firstName);
-        stringJoiner.add(secondName);
-        stringJoiner.add(thirdName);
+        StringJoiner stringJoinerAllNames = new StringJoiner(", ");
+        stringJoinerAllNames.add(firstName);
+        stringJoinerAllNames.add(secondName);
+        stringJoinerAllNames.add(thirdName);
 
-        System.out.println(stringJoiner);
+        String listAllNames = String.join("\n", firstName, secondName, thirdName);
+
+        System.out.println(stringJoinerAllNames);
+        System.out.println(listAllNames);
     }
 }
