@@ -6,9 +6,10 @@ public class Main6 {
         int firstAge = 24;
         double firstWeight = 72.6;
         boolean firstIsStudent = false;
-
         Calendar firstBirthday = Calendar.getInstance();
+        firstBirthday.set(Calendar.YEAR, 2000);
         firstBirthday.set(Calendar.DAY_OF_MONTH, 6);
+        firstBirthday.set(Calendar.MONTH, 12 - 1);
         int firstAcademicPerformance = 93;
 
 
@@ -17,7 +18,9 @@ public class Main6 {
         double secondWeight = 80.9;
         boolean secondIsStudent = false;
         Calendar secondBirthday = Calendar.getInstance();
+        secondBirthday.set(Calendar.YEAR, 1990);
         secondBirthday.set(Calendar.DAY_OF_MONTH, 12);
+        secondBirthday.set(Calendar.MONTH, 11 - 1);
         int secondAcademicPerformance = 99;
 
 
@@ -25,7 +28,7 @@ public class Main6 {
         String template = "Current person{%n" +
                           "{\"name\"} : {\"%s\"}; {\"age\"} : {\"%d\"}%n" +
                           "{\"weight}\" : {\"%f\"}; {\"isStudent\"} : \"%b\"%n" +
-                          "{\"birthday\"} : {\"%td\"}; {\"academic performance\"} : {\"%d%%\"}" +
+                          "{\"birthday\"} : {\"%tD\"}; {\"academic performance\"} : {\"%d%%\"}" +
                           "%n}";
         String firstResult = String.format(
                 template,
