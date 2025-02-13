@@ -24,7 +24,7 @@ public class Main6 {
         int secondAcademicPerformance = 99;
 
 
-        //weight, isStudent, data, percent academic performance
+        //weight - %f, isStudent - %b, academicPerformance - добавите в конец %%, birthday - %tD
         String template = "Current person{%n" +
                           "{\"name\"} : {\"%s\"}; {\"age\"} : {\"%d\"}%n" +
                           "{\"weight}\" : {\"%f\"}; {\"isStudent\"} : \"%b\"%n" +
